@@ -1,0 +1,41 @@
+baseURL = "/"
+languageCode = "en-us"
+theme = "terminal"
+paginate = 5
+
+[params]
+  themeColor = "blue"
+  showMenuItems = 1
+  showLanguageSelector = false
+  fullWidthTheme = false
+  centerTheme = true
+  showLastUpdated = true
+  enableGitInfo = true
+  oneHeadingSize = false
+
+  [params.twitter]
+    creator = "duncanahill"
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    title = "Duncan's Blog"
+    subtitle = "Technical topics and walkthroughs"
+    owner = "Duncan Hill"
+    keywords = "dotnet cloud architecture programming"
+    copyright = "© 2021, Duncan Hill. All rights reserved."
+    menuMore = "Show more"
+    readMore = "Read more"
+    readOtherPosts = "Read other posts"
+    missingContentMessage = "Page not found..."
+    missingBackButtonLabel = "Back to home"
+
+    [languages.en.params.logo]
+      logoText = "Duncan's Blog"
+      logoHomeLink = "/"
+
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = "about"
+        name = "About"
+        url = "/about"
